@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "D:\\LearningProjects\\GitHub\\OliverLib3\\specialViewLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\v1.png",
+        "source": "D:\\LearningProjects\\GitHub\\OliverLib3\\specialViewLibrary\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\v1.png"
+    },
+    {
+        "merged": "D:\\LearningProjects\\GitHub\\OliverLib3\\specialViewLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\cancel.png",
+        "source": "D:\\LearningProjects\\GitHub\\OliverLib3\\specialViewLibrary\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\cancel.png"
+    },
+    {
+        "merged": "D:\\LearningProjects\\GitHub\\OliverLib3\\specialViewLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\dialog_loading_bg.9.png",
+        "source": "D:\\LearningProjects\\GitHub\\OliverLib3\\specialViewLibrary\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\dialog_loading_bg.9.png"
+    },
+    {
+        "merged": "D:\\LearningProjects\\GitHub\\OliverLib3\\specialViewLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\ic_launcher.png",
+        "source": "D:\\LearningProjects\\GitHub\\OliverLib3\\specialViewLibrary\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\LearningProjects\\GitHub\\OliverLib3\\specialViewLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\voice_to_short.png",
+        "source": "D:\\LearningProjects\\GitHub\\OliverLib3\\specialViewLibrary\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\voice_to_short.png"
+    },
+    {
+        "merged": "D:\\LearningProjects\\GitHub\\OliverLib3\\specialViewLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\recorder.png",
+        "source": "D:\\LearningProjects\\GitHub\\OliverLib3\\specialViewLibrary\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\recorder.png"
+    }
+]
