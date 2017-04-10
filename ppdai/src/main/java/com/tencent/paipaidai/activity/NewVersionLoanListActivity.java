@@ -32,7 +32,7 @@ import butterknife.InjectView;
 import butterknife.OnClick;
 
 
-public class NewVersionLoanListActivity extends Activity implements XListView.IXListViewListener, AdapterView.OnItemClickListener {
+public class NewVersionLoanListActivity extends Activity implements  AdapterView.OnItemClickListener {
     @InjectView(R.id.tv_low_risk)
     TextView tvLowRisk;
     @InjectView(R.id.tv_high_earnings)
@@ -70,12 +70,17 @@ public class NewVersionLoanListActivity extends Activity implements XListView.IX
         new Thread(new Runnable() {
             @Override
             public void run() {
-                loanStr = LoanHttpUtil.getLoanList(1, "2017-04-08 12:00:00.000");
+                loanStr = LoanHttpUtil.getLoanList(1, "2016-05-01 12:00:00.000");
                 try {
                     JSONObject resultObject = new JSONObject(loanStr);
                     JSONArray loanInfos = resultObject.getJSONArray("LoanInfos");
-                    for (int i = 0; i < 100; i++) {
-                        JSONObject singleObject = loanInfos.getJSONObject(i);
+                    for (int i = 0; i < 50; i++) {
+                        JSONObject singleObject=null;
+                        try{
+                             singleObject = loanInfos.getJSONObject(i);
+                        }catch (Exception e){
+                            continue;
+                        }
                         int listingId = MJsonUtil.getInt(singleObject, "ListingId");
                         String title = MJsonUtil.getString(singleObject, "Title");
                         String CreditCode = MJsonUtil.getString(singleObject, "CreditCode");
@@ -110,21 +115,12 @@ public class NewVersionLoanListActivity extends Activity implements XListView.IX
                     });
                 } catch (Exception e) {
                     e.printStackTrace();
-                    UsualTools.showDataErrorToast(NewVersionLoanListActivity.this);
+//                    UsualTools.showDataErrorToast(NewVersionLoanListActivity.this);
                 }
             }
         }).start();
     }
 
-    @Override
-    public void onRefresh() {
-        listView.stopRefresh();
-    }
-
-    @Override
-    public void onLoadMore() {
-        listView.stopLoadMore();
-    }
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

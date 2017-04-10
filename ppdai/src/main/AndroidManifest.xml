@@ -3,24 +3,24 @@
     package="com.tencent.paipaidai">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="魔拍宝"
         android:supportsRtl="true"
         android:theme="@android:style/Theme.Light.NoTitleBar">
         <activity android:name=".activity.MainActivity">
 
         </activity>
-        <activity android:name=".activity.NewVersionLoanListActivity" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+        <activity android:name="com.tencent.paipaidai.activity.NewVersionLoanListActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity><activity android:name="com.tencent.paipaidai.activity.NewVersionLoanListDetailActivity">
+
         </activity>
-        <activity android:name=".activity.NewVersionLoanListDetailActivity"></activity>
     </application>
 
 </manifest>
